@@ -44,8 +44,8 @@ function library:CreateGUI()
         
         Tab.Name = Name
         Tab.Parent = ScreenGui
-        Tab.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-        Tab.BorderColor3 = Color3.fromRGB(111, 111, 255)
+        Tab.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+        Tab.BorderColor3 = Color3.fromRGB(95, 95, 255)
         Tab.BorderSizePixel = 1
         Tab.Position = UDim2.new(0.04, 0, 0.1, 0)
         Tab.Size = UDim2.new(0, 230, 0, 18)
@@ -55,8 +55,8 @@ function library:CreateGUI()
 
         Top.Name = "Top"
         Top.Parent = Tab
-        Top.BackgroundColor3 = Color3.fromRGB(111, 111, 255)
-        Tab.BorderColor3 = Color3.fromRGB(111, 111, 255)
+        Top.BackgroundColor3 = Color3.fromRGB(95, 95, 255)
+        Tab.BorderColor3 = Color3.fromRGB(95, 95, 255)
         Top.BorderSizePixel = 0
         Top.Size = UDim2.new(0, 230, 0, 18)
         
@@ -68,13 +68,13 @@ function library:CreateGUI()
         Title.Size = UDim2.new(0, 230, 0, 18)
         Title.Font = Enum.Font.Code
         Title.Text = tostring(Name)
-        Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+        Title.TextColor3 = Color3.fromRGB(95, 95, 255)
         Title.TextSize = 14.000
         Title.TextWrapped = true
         
         Items.Name = "Items"
         Items.Parent = Tab
-        Items.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Items.BackgroundColor3 = Color3.fromRGB(95, 95, 255)
         Items.BackgroundTransparency = 1.000
         Items.BorderSizePixel = 0
         Items.Position = UDim2.new(0, 10, 0, 20)
@@ -94,43 +94,43 @@ function library:CreateGUI()
             
             Button.Name = "Button"
             Button.Parent = Tab.Items
-            Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Button.BackgroundColor3 = Color3.fromRGB(95, 95, 255)
             Button.BackgroundTransparency = 1.000
             Button.BorderSizePixel = 0
             Button.Position = UDim2.new(0, 0, 0.07, 0)
             Button.Size = UDim2.new(0, 165, 0, 12)
             Button.Font = Enum.Font.Code
             Button.Text = title
-            Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+            Button.TextColor3 = Color3.fromRGB(95, 95, 255)
             Button.TextSize = 14.000
             Button.TextXAlignment = Enum.TextXAlignment.Left
             
             Status.Name = "Status"
             Status.Parent = Button
-            Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Status.BackgroundColor3 = Color3.fromRGB(95, 95, 255)
             Status.BackgroundTransparency = 1.000
             Status.Position = UDim2.new(0.9, 0, 0, 0)
             Status.Size = UDim2.new(0, 50, 0, 12)
             Status.Font = Enum.Font.Code
             Status.Text = "OFF"
-            Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+            Status.TextColor3 = Color3.fromRGB(95, 95, 255)
             Status.TextSize = 14.000
             
             if(toggled) then
-                Status.TextColor3 = Color3.fromRGB(111, 111, 255)
+                Status.TextColor3 = Color3.fromRGB(95, 95, 255)
                 Status.Text = "ON"
             else
-                Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+                Status.TextColor3 = Color3.fromRGB(95, 95, 255)
                 Status.Text = "OFF"
             end
             
             Button.MouseButton1Down:Connect(function()
                 toggled = not toggled
                 if(toggled) then
-                    Status.TextColor3 = Color3.fromRGB(111, 111, 255)
+                    Status.TextColor3 = Color3.fromRGB(95, 95, 255)
                     Status.Text = "ON"
                 else
-                    Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    Status.TextColor3 = Color3.fromRGB(95, 95, 255)
                     Status.Text = "OFF"
                 end
                 func(toggled)
@@ -152,20 +152,20 @@ function library:CreateGUI()
             
             Keybind.Name = "Keybind"
             Keybind.Parent = Tab.Items
-            Keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Keybind.BackgroundColor3 = Color3.fromRGB(95, 95, 255)
             Keybind.BackgroundTransparency = 1.000
             Keybind.BorderSizePixel = 0
             Keybind.Position = UDim2.new(0, 0, 0.07, 0)
             Keybind.Size = UDim2.new(0, 165, 0, 12)
             Keybind.Font = Enum.Font.Code
             Keybind.Text = title
-            Keybind.TextColor3 = Color3.fromRGB(255, 255, 255)
+            Keybind.TextColor3 = Color3.fromRGB(95, 95, 255)
             Keybind.TextSize = 14.000
             Keybind.TextXAlignment = Enum.TextXAlignment.Left
             
             Status.Name = "Status"
             Status.Parent = Keybind
-            Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Status.BackgroundColor3 = Color3.fromRGB(95, 95, 255)
             Status.BackgroundTransparency = 1.000
             Status.Position = UDim2.new(0.9, 0, 0, 0)
             Status.Size = UDim2.new(0, 50, 0, 12)
